@@ -1,8 +1,26 @@
 aid: enosys-markets
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/enosys-markets.png
 name: Enosys Markets
-description: Enosys Markets is a company surfaced as a portfolio company of battery-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: "Ēnosys (formerly Flare Finance) is a decentralized finance (DeFi)\
+  \ platform building on the Flare and Songbird networks. Its product suite spans DEX\
+  \ V2 and V3 automated market makers with liquidity provision, collateralized Loans,\
+  \ yield Farms with a token launchpad, a cross-chain Bridge, DeFi price Oracles built\
+  \ on the Flare Time Series Oracle (FTSO), the Skopos blockchain indexer, Oryy multi-signature\
+  \ self-custody vaults, and an NFT suite (Gallery, Ermis, Clover). Enosys interfaces\
+  \ are smart-contract based rather than a conventional REST API; developer integration\
+  \ happens through published Solidity contracts, subgraphs, and price-feed connectors\
+  \ in the flrfinance GitHub organization."
 url: https://raw.githubusercontent.com/api-evangelist/enosys-markets/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +28,54 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment-note: "DeFi smart-contract protocol on Flare/Songbird; no conventional\
+  \ REST/OpenAPI surface published. Battery Ventures backing is inherited from the\
+  \ VC-portfolio stub and was not independently verified during enrichment."
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- DeFi
+- Blockchain
+- Decentralized Exchange
+- Flare Network
+- Smart Contracts
+- Cryptocurrency
+- Web3
+- Lending
 apis: []
+common:
+- type: DomainSecurity
+  url: security/enosys-markets-domain-security.yml
+- type: Portal
+  name: Enosys Website
+  url: https://enosys.global
+- type: Documentation
+  name: Enosys Help Center
+  url: https://help.enosys.global/enosys/
+- type: GitHubOrganization
+  name: flrfinance GitHub Organization
+  url: https://github.com/flrfinance
+- type: Blog
+  name: Enosys on Medium
+  url: https://enosys.medium.com
+- type: Support
+  name: Enosys Discord
+  url: https://discord.gg/enosys-global
+- type: TermsOfService
+  name: Terms of Service
+  url: https://flrfinance.notion.site/FLR-Finance-Terms-of-Service-2667f46b02794f35bea6a9d6b22c9da8
+- type: PrivacyPolicy
+  name: Privacy Policy
+  url: https://flrfinance.notion.site/FLR-Finance-Privacy-Policy-4ebd1d1c505046cc858735e601d54779
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
