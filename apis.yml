@@ -31,7 +31,7 @@ x-tier-reason: portfolio-lead
 x-enrichment-note: "DeFi smart-contract protocol on Flare/Songbird; no conventional\
   \ REST/OpenAPI surface published. Battery Ventures backing is inherited from the\
   \ VC-portfolio stub and was not independently verified during enrichment."
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
