@@ -57,6 +57,8 @@ tags:
 - Lending
 apis: []
 common:
+- type: Website
+  url: https://www.enosys.global/
 - type: DomainSecurity
   url: security/enosys-markets-domain-security.yml
 - type: Portal
